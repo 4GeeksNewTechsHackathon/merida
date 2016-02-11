@@ -1,5 +1,6 @@
 import {bootstrap}    from 'angular2/platform/browser'
-// import {Todo} from './app.component'
-import {CabeceraComponent} from './header.component'
+import {LibroRecetasComponents} from './app.component'
 
-bootstrap(CabeceraComponent);
+//import {FooterComponent} from './footer.component'
+
+bootstrap(LibroRecetasComponents);

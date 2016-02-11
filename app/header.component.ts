@@ -4,7 +4,7 @@ import {
 } from 'angular2/core';
 
 @Component({
-    selector: 'cabecera'
+    selector: 'mlr-header'
 })
 
 @View({
