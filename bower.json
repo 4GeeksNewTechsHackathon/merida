@@ -1,0 +1,23 @@
+{
+  "name": "misrecetas",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Dianerys Rangel <drangel@4geeks.com.ve>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

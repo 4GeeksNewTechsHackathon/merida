@@ -1,0 +1,60 @@
+@import "color.less";
+@import "funciones.less";
+@import "fonts.less";
+@import "common.less";
+@import "home.less";
+@import "recetas.less";
+@import "ingresar.less";
+@import "categoria.less";
+@import "responsive.less";
+
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	font-size: 14px;
+	color: @negro;
+	font-family: 'IndieFlower';
+}
+
+#container {
+	min-height:100%;
+	position:relative;
+	background: @blanco;
+
+	.contenido();
+
+	.header();
+	.recetas();
+	.addRecetas();
+	.editRecetas();
+	.removeRecetas();
+	.login();
+	.registro();
+	.responsive();
+	.categArroz();
+	.categCarnes();
+	.categPastas();
+	.categPollo();
+	.categPostres();
+	.categSana();
+		
+	#content {
+		padding-bottom: 80px;
+		width: 100%; 
+		margin: auto; 
+		overflow: hidden;
+		background-color: @blanco;
+
+		.home();
+		
+	}
+
+	.footer();
+	
+}
+
+.container-fluid{
+	padding: 0px;
+}

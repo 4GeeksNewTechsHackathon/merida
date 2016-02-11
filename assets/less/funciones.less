@@ -1,0 +1,14 @@
+//funciones
+
+.shadow-generator(@hshadow, @vshadow, @blur, @spread, @colorrgb ){
+	-webkit-box-shadow: @hshadow @vshadow @blur @spread @colorrgb;
+	-moz-box-shadow:    @hshadow @vshadow @blur @spread @colorrgb;
+	box-shadow:         @hshadow @vshadow @blur @spread @colorrgb;
+}
+
+.bordes-redondos-extend(@topleft, @topright, @bottomright, @bottomleft) {
+ 	border-radius:  @topleft @topright @bottomright @bottomleft;
+ 	-webkit-border-radius:  @topleft @topright @bottomright @bottomleft;
+ 	-moz-border-radius :  @topleft @topright @bottomright @bottomleft;
+ 	-ms-border-radius :  @topleft @topright @bottomright @bottomleft;
+}

@@ -1,0 +1,245 @@
+.home(){
+	
+	.home{
+		
+		.contenido-home{
+			float: none;
+			margin: 10px auto;
+			overflow: hidden;
+			background-color: @blanco;
+
+			.border-bottom{
+				border-bottom: 1px solid @VerdeClaro;
+			}
+
+			.rh-pestania{
+				text-align: left;
+				height: 50px;
+
+				h2{
+					margin: 0px;
+					font-size: 20px;
+					line-height: 50px;
+					padding: 0px 10px;
+				}
+			}
+
+			.home-izq{
+				overflow: hidden;
+				margin: 10px auto;
+				float: none;
+				padding: 0px;
+
+				.navbar-collapse{
+					padding: 0px;
+					border-top: 0px;
+				}
+				
+				.rh-pestania{
+					background-color: @AmarilloClaro;
+				}
+
+				.rh-contenido{
+					// background-color: @Rojo;
+					
+					ul{
+						list-style-type: none;
+						text-align: left;
+						padding: 0px;
+						background-color: @gris;
+
+						li>a{
+							padding: 10px 5px;
+							.bordes-redondos-extend(0px, 0px, 0px, 0px);
+							text-decoration: none;
+							font-size: 16px;
+							color: @negro;
+						}
+					}
+
+					.nav>li>a:hover, .nav>li>a:focus{
+						background-color: @VerdeClaro;
+						color: @blanco;
+					}
+
+					.nav-stacked>li+li{
+						margin-top: 0px;
+					}
+				}
+			}
+
+			.menu-izq2{
+				margin: 10px auto;
+				float: none;
+				padding: 0px;
+
+
+				.navbar-toggle{
+					padding: 0px;
+					margin: 0px;
+					border: 0px;
+
+					.rh-pestania{
+						text-align: left;
+						height: 50px;
+						background-color: @AmarilloClaro;
+
+						h2{
+							margin: 0px;
+							font-size: 20px;
+							line-height: 50px;
+							padding: 0px 10px;
+						}
+					}
+				}
+				
+			}
+
+
+			.home-der{
+				overflow: hidden;
+				background-color: @gris;
+				padding: 0px;
+				float: none;
+				margin: 10px auto;
+
+				.rh-pestania{
+					background-color: @AmarilloClaro;
+				}
+
+				.rh-contenido-home-der{
+					margin: 0px auto;
+					padding: 0px;
+					float: none;
+
+					.receta-home{
+						vertical-align: top;
+						text-align: center;
+						float: none;
+						padding: 0px;
+						margin: 10px auto;
+						background-color: @blanco;
+
+
+						a, a:hover{
+							text-decoration: none;
+							color: @negro;
+						}
+
+						.rh-masdatos{
+							display: block;
+							overflow: hidden;
+							background-color: @VerdeClaro;
+
+							h5{
+								margin: 0px;
+								padding: 5px;
+								font-size: 12px;
+							}
+
+							.num-personas{
+								padding: 0px;
+								
+								h5{
+									text-align: left;
+								}
+							}
+
+							.tiempo-coccion{
+								padding: 0px;
+								
+								h5{
+									text-align: right;
+								}
+							}
+						}
+
+						.rh-titulo{
+							text-align: center;
+							margin: 15px 0px;
+						}
+
+						.rh-titulo h2{
+							font-size: 20px;
+							margin: 0px;
+							padding: 10px;
+						}
+
+						.contenido-tags{
+
+							ul{
+								padding: 10px 5px; 
+								border-top: 1px solid @VerdeClaro;
+								margin: 0px;
+							}
+
+							.tags-list.btn{
+								background-color: @gris1;
+								color: @blanco;
+								padding: 3px 8px;
+								.bordes-redondos-extend(20px, 20px, 20px, 20px);
+								margin: 0px 2px;
+
+								a{
+									text-decoration: none;
+									color: @negro;
+								}
+
+								a:hover{
+									color: @blanco;
+								}
+							}
+
+							.btn:active{
+								box-shadow: none;
+							}
+
+							.tags-list.btn:hover{
+								background-color: @AmarilloOscuro;
+								color: @blanco;
+							}
+						}
+
+						.rh-bottom{
+							background-color: @VerdeClaro;
+							color: @negro;
+							overflow: hidden;
+
+							h5{
+								margin: 0px;
+								padding: 5px;
+							}
+
+							.rh-bottom-der{
+								text-align: right;
+								display: inline-block;
+							}
+
+							.rh-bottom-izq{
+								text-align: left;
+								display: inline-block;
+							}
+						}
+
+					}
+
+				}
+
+			}
+
+			
+		}
+
+		.col-xs-12{
+			padding: 0px;
+		}
+
+	}
+
+	// .col-sm-12{
+	// 	text-align: center;
+	// }
+}
+
+
+
