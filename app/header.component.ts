@@ -3,6 +3,8 @@ import {
 	View
 } from 'angular2/core';
 
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
+
 @Component({
     selector: 'mlr-header'
 })
@@ -14,9 +16,8 @@ import {
 			<div class="mr-menu1">
 				<div class="menu-der col-xs-8 col-sm-5 col-md-4 col-lg-3">
 					<div class="mr-titulo col-xs-12 col-sm-12 col-md-12 col-lg-12 pad">
-						<a href="#/">
+						<a [routerLink]="['Index']">
 							<h1 class="txt-title">Mi Libro<br> <span class="margen-titulo">de Cocina</span></h1>
-							<!-- <img class="img-title"src="images/gorro2.png"> -->
 						</a>
 					</div>
 				</div>
@@ -46,8 +47,8 @@ import {
 				<div class="menu-inicio col-xs-12 col-sm-8 col-md-8 col-lg-8">
 					<div class="collapse navbar-collapse menu-desplegable" collapse="isCollapsed">
 						<ul class="nav nav-pills">
-							<li role="navigation" ng-class="{ 'menu-active' : menu.minicio}" class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/">Inicio</a></li>
-							<li role="navigation" ng-class="{ 'menu-active' : menu.mrecetas}" class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/recetas">Recetas</a></li>
+							<li role="navigation" ng-class="{ 'menu-active' : menu.minicio}" class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a [routerLink]="['Index']">Inicio</a></li>
+							<li role="navigation" ng-class="{ 'menu-active' : menu.mrecetas}" class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a [routerLink]="['Recetas']">Recetas</a></li>
 							<li role="navigation" ng-class="{ 'menu-active' : menu.mnueva}" class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a href="#/addReceta">Crear Receta</a></li>
 						</ul>
 					</div>
@@ -70,6 +71,7 @@ import {
 		</div>
 	</div> 
     `,
+	directives: [ROUTER_DIRECTIVES]
 })
 
-export class CabeceraComponent {}
+export class CabeceraComponent { }
