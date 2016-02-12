@@ -5,5 +5,7 @@ export interface Receta {
 	dificultad: string;
 	ingredientes: Array<string>;
 	pasos: Array<string>;
+	tags: Array<string>;
+
 
 }

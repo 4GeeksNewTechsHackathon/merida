@@ -36,7 +36,7 @@ import {RecetaService} from './receta.service';
                                     <li>
                                         <div class="contenido-tags">
                                             <ul>
-                                                <li></li>
+                                                <li class="tags-list btn" *ngFor="#tag of receta.tags"><a href="">{{tag}}</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -47,7 +47,7 @@ import {RecetaService} from './receta.service';
                                     <h1>Ingredientes:</h1>
                                     <ul>
                                         <li *ngFor="#ingrediente of receta.ingredientes">
-                                            <h5>{{ingrediente}}</h5>
+                                            <h4>{{ingrediente}}</h4>
                                         </li>
                                     </ul>
                                 </div>
@@ -56,7 +56,7 @@ import {RecetaService} from './receta.service';
                                         <h1>Preparación:</h1>
                                         <ul>
                                             <li *ngFor="#paso of receta.pasos">
-                                                <h5>{{paso}}</h5>
+                                                <h4> - {{paso}}</h4>
                                             </li>
                                         </ul>
                                     </div>
