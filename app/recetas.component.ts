@@ -32,8 +32,13 @@ import {RecetaService} from './receta.service';
 									<h5>{{receta.tiemporeceta}} minutos</h5>
 								</div>
 							</div>
-							<div class="rh-titul">
+							<div class="rh-titulo">
 								<h2>{{ receta.nombrereceta }}</h2>
+							</div>
+							<div class="contenido-tags">
+								<ul>
+									<li class="tags-list btn" *ngFor="#tag of receta.tags"><a href="">{{tag}}</a></li>
+								</ul>
 							</div>
 							<div class="rh-bottom">
 								<div class="rh-bottom-izq col-xs-12 col-s6 col-md-6 col-lg-6">

@@ -8,7 +8,7 @@ import {
 })
 
 @View({
-    templateUrl: './templates/footer.html',
+    templateUrl: './app/templates/footer.html',
 })
 
 export class FooterComponent {}

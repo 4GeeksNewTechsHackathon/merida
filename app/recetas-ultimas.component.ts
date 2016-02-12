@@ -33,7 +33,7 @@ import {RecetaService} from './receta.service';
 								<h5>{{receta.tiemporeceta}} minutos</h5>
 							</div>
 						</div>
-						<div class="rh-titul">
+						<div class="rh-titulo">
 							<h2>{{ receta.nombrereceta }}</h2>
 						</div>
 						<div class="contenido-tags">

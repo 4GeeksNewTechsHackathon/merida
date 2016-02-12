@@ -24,7 +24,7 @@ System.register(['angular2/core'], function(exports_1) {
                         selector: 'mlr-footer'
                     }),
                     core_1.View({
-                        template: "\n\t\t<div class=\"content-footer\">\n\t\t\t<div class=\"footer-derechos col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n\t\t\t\t<h5>Mi Libro de Cocina \u00A9 2015 - Todos los derechos reservados</h5>\n\t\t\t</div>\n\t\t</div>\n    ",
+                        templateUrl: './app/templates/footer.html',
                     }), 
                     __metadata('design:paramtypes', [])
                 ], FooterComponent);
