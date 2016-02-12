@@ -1,11 +1,14 @@
 import {
 	Component,
-	View
+	View,
+    OnInit
 } from 'angular2/core';
 
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 import {CabeceraComponent} from './header.component';
 import {ContentComponent} from './content.component';
+import {RecetasComponent} from './recetas.component';
+import {RecetaDetalleComponent} from './receta-detalle.component';
 import {FooterComponent} from './footer.component';
 
 @Component({
@@ -27,7 +30,7 @@ import {FooterComponent} from './footer.component';
         </div>
     </div>
     `,
-    directives: [ROUTER_DIRECTIVES, CabeceraComponent, FooterComponent, ContentComponent]
+    directives: [ROUTER_DIRECTIVES, CabeceraComponent, FooterComponent, ContentComponent, RecetaDetalleComponent]
 
 })
 
@@ -40,8 +43,14 @@ import {FooterComponent} from './footer.component';
     {
         path: '/recetas',
         name: 'Recetas',
-        component: ContentComponent
+        component: RecetasComponent
+    },
+    {
+       path: '/receta-detalle/:id',
+       name: 'RecetaDetalle',
+       component: RecetaDetalleComponent
     }
 ] )
 
 export class LibroRecetasComponents {} 
+
